@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="1000"
+            app:el_expanded="true"
+            app:el_parallax="0.5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tv_text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="3dp"
+                    android:paddingStart="20dp"
+                    android:text="Food name"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0" />
+
+                <!--  <Spinner
+                     android:id="@+id/sp_category"
+                     android:layout_width="200dp"
+                     android:layout_height="38dp"
+                     app:layout_constraintBottom_toBottomOf="parent"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintHorizontal_bias="0.126"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toTopOf="parent"
+                     app:layout_constraintVertical_bias="0.741" />-->
+
+
+                <TextView
+                    android:id="@+id/tv_text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:padding="5dp"
+                    android:paddingStart="20dp"
+                    android:text="serving"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <Spinner
+                    android:id="@+id/sp_category"
+                    android:layout_width="180dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15sp"
+                    android:padding="2dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.753" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/gone_constraint"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="25sp"
+                    android:background="@drawable/google1"
+                    android:padding="1dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/tv_text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/google"
+                        android:focusable="true"
+                        android:hint="Add"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/add_btn"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/boder_blue"
+                        android:inputType="number"
+                        android:padding="3dp"
+                        android:text="Add"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tv_text12"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_arrow_down"
+                    app:tint="@color/black" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/tv_text12"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                    android:tint="@color/black"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card1"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lyt"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:id="@+id/searchDish"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+
+
+
+

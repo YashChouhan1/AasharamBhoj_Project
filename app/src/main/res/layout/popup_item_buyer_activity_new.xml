@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="0dp">
+
+
+        <LinearLayout
+            android:id="@+id/lyt0"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/matching_back"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:hint="Select date "
+
+                    android:textColor="#FF6F00"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.32"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="221dp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclr"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="#FF6F00"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Share "
+                    android:textColor="@color/white"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.238"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/date"
+
+                    app:layout_constraintVertical_bias="0.6" />
+
+                <TextView
+                    android:id="@+id/submit"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="#FF6F00"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="Submit "
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/date"/>
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

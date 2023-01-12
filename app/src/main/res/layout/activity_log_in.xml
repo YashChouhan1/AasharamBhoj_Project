@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/thali"
+            app:shapeAppearanceOverlay="@style/ImageCircleTheme" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_shape_1"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:hint="Enter E-Mail"
+            android:inputType="text"
+            android:paddingVertical="10dp"
+            android:paddingStart="7dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="7dp" />
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_shape_1"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingVertical="10dp"
+            android:paddingStart="7dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="7dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:text="Forget Password ?"
+            android:textColor="#0000ff"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF6F00"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:paddingVertical="10dp"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

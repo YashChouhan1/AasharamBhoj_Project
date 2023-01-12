@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="15dp">
+
+    <LinearLayout
+        android:id="@+id/lyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Menu Name: "
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/txt"
+            android:hint="Write menu name.."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyt"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/subm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:backgroundTint="@color/purple_700"
+
+            android:text="Submit" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+    <!--
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/download"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_remove_red_eye"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download File"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/shareLinearLayout"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/uploadLinearLaySout"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_add_connection"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload To Google Drive"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/copyLinearLayout"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_eye"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy Link"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/delete"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_settings"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete File Selection"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>-->

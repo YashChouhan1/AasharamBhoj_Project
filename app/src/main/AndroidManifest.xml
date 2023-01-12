@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.icss.aasharambhoj">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AasharamBhoj"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Splash_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PdfViewActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ChefHomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".IngredintActivity" />
+        <activity android:name=".BuyerActivity" />
+        <activity android:name=".UtensilsActivityBuyerr" />
+        <activity android:name=".UtensilsChefActivity" />
+        <activity android:name=".DaalBatiActivity" />
+        <activity android:name=".DishAcitivity" />
+        <activity android:name=".RojBhogActivity" />
+        <activity android:name=".Chili" />
+        <activity android:name=".SadhavikActivity" />
+        <activity android:name=".PdfViewActivityNew" />
+        <activity android:name=".PrefixActivity" />
+        <activity android:name=".login_activity.Login2" />
+    </application>
+
+</manifest>
